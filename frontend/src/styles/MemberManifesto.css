@@ -1,0 +1,59 @@
+/* Container styling */
+.profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Individual candidate box */
+  .candidate-box {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  
+  .candidate-box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Candidate photo */
+  .candidate-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  /* Candidate details */
+  .details p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .details a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .details a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Heading */
+  h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  

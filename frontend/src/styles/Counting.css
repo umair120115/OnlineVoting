@@ -1,0 +1,117 @@
+/* Main wrapper for all counting boxes */
+.counting-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow the boxes to wrap onto a new line */
+    gap: 16px; /* Space between boxes */
+    justify-content: center; /* Center-align the boxes */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  /* Individual counting box */
+  .counting-box {
+    background-color: #ffffff; /* White background for boxes */
+    border: 1px solid #ddd; /* Subtle border for separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Internal padding for text */
+    width: 250px; /* Set a fixed width for consistency */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for counting box */
+  .counting-box:hover {
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Intensify shadow on hover */
+  }
+  
+  /* Styling for strong tags inside the box */
+  .counting-box strong {
+    color: #333; /* Darker color for labels */
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .counting-box {
+      width: 100%; /* Full width for smaller screens */
+    }
+  }
+  
+
+  .upload-voterlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-screen height */
+    background-color: #f7f9fc; /* Light background color */
+    padding: 20px;
+}
+
+.upload-form {
+    background: #fff; /* White form background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Responsive size */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.file-input {
+    display: block;
+    width: 100%;
+    margin: 10px 0 20px;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.file-input:focus {
+    border-color: #007bff; /* Blue border on focus */
+}
+
+.upload-button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.upload-button:active {
+    background-color: #003f7f; /* Even darker on click */
+}
+
+@media (max-width: 768px) {
+    .upload-form {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,15 @@
+django
+djangorestframework
+python-dotenv
+djangorestframework-simplejwt
+django-cors-headers
+django-filter
+Pillow
+streamlit
+pydf2
+langchain
+faiss-cpu
+openai
+huggingface_hub
+InstructorEmbedding
+sentence_transformers
