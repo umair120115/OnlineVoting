@@ -39,13 +39,13 @@ An online voting platform designed to educate the new generation on the importan
 4. Running backend server:
    ```bash
      py manage.py runserver
-4. **Frontend**
+5. **Frontend**
    move to the directory:
    ```bash
       cd frontend/
-   install dependencies:
+6. install dependencies:
    ```bash
       npm install
-   run the server to see application:
+7. run the server to see application:
    ```bash
       npm run dev
