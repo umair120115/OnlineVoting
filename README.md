@@ -32,15 +32,20 @@ An online voting platform designed to educate the new generation on the importan
    cd OnlineVoting
 2. Install dependencies:
      uv install
-   Apply database migrations:
+3. Apply database migrations:
+   ```bash
      py manage.py makemigrations
      py manage.py migrate
-   Running backend server:
+4. Running backend server:
+   ```bash
      py manage.py runserver
-3. **Frontend**
+4. **Frontend**
    move to the directory:
+   ```bash
       cd frontend/
    install dependencies:
+   ```bash
       npm install
    run the server to see application:
+   ```bash
       npm run dev
