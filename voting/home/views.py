@@ -11,6 +11,7 @@ from datetime import date
 from PyPDF2 import PdfReader
 from django.db import transaction
 import csv
+from main import chat
 
 # Create your views here.
 class UserView(generics.ListCreateAPIView):
@@ -244,3 +245,18 @@ def upload_members_list(request,organization_id):
 
     except Exception as e:
         return JsonResponse({'status': f'Error processing file: {str(e)}'}, status=500)
+
+
+@csrf_exempt
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def chatbot(request):
+    question = request.data.get('question')
+    if not question:
+        return JsonResponse({'status': 'Question not provided'}, status=400)
+    
+    try:
+        response = chat(question)
+        return JsonResponse({'answer': response['answer']})
+    except Exception as e:
+        return JsonResponse({'status': f'Error processing request: {str(e)}'}, status=500)

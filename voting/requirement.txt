@@ -5,11 +5,11 @@ djangorestframework-simplejwt
 django-cors-headers
 django-filter
 Pillow
-streamlit
 pydf2
 langchain
+langchain-community
+langchain-groq
 faiss-cpu
-openai
+IPython
 huggingface_hub
-InstructorEmbedding
-sentence_transformers
+sentence-transformers

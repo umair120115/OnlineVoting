@@ -36,7 +36,8 @@ urlpatterns = [
     path('vote/<int:organization_id>/discussion/',discussion_view,name='voters_discusssion'),
     path('vote/<int:organization_id>/get_discussion/',DiscussionView.as_view(),name='get_discussions'),
     path('vote/<int:organization_id>/voterlist/',upload_voter_list,name='upload_voter_list'),
-    path('vote/<int:organization_id>/membersfile/',upload_members_list,name='members_list_upload')
+    path('vote/<int:organization_id>/membersfile/',upload_members_list,name='members_list_upload'),
+    path('vote/chatbot/',chatbot,name='chatbot'),
 
 ]
 if settings.DEBUG:

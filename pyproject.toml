@@ -32,4 +32,6 @@ dependencies = [
     "tiktoken>=0.8.0",
     "langchain-groq>=0.2.1",
     "onnxruntime>=1.20.1",
+    "ipython>=8.31.0",
+    "sentence-transformers>=3.3.1",
 ]
